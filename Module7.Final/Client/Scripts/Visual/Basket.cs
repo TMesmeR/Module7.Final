@@ -39,10 +39,7 @@ namespace Module7.Final.Client.Scripts.Visual
                     BasketDictionary = DictionaryOf.CreateADictionaryBasket(BasketUser._basketUser);
                     
                     Console.WriteLine("В корзине:");
-                    foreach (var Product in BasketDictionary)
-                    {
-                        Console.WriteLine($"{Product.Key} - {Product.Value.Item1} - {Product.Value.Item2}");
-                    }
+                    BasketUser.PrintBasket(BasketDictionary);
                     Console.WriteLine ($"Общая сумма покупки {BasketUser.GetSummOrder()}");
 
                     Console.WriteLine("Введите номер продукта, если хотите его удалить.");

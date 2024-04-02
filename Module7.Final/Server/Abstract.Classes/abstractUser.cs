@@ -33,13 +33,13 @@ namespace Module7.Final.Server.Abstract.Classes
             }
         }
         private protected string UserAddress { get; set; }
-        private protected int Wallet { get; set; }
+ 
 
         internal string GetUserName() => UserName;
         internal string GetEmail() => Email;
         internal string GetUserAdress() => UserAddress;
         internal int GetAge() => Age;
-        internal float GetWallet() => Wallet;
+        
         internal DateTime GetBirthDay() => Birthday;
 
     }

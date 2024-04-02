@@ -24,7 +24,6 @@ namespace Module7.Final.Client.Scripts.Visual
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine($"Вас счет: {User.clientUser.GetWallet()}.р");
                 Console.WriteLine("Введите 0 для возврата в меню");
                 Console.WriteLine("Выберите категорию товаров:");
                 Console.WriteLine();
@@ -43,7 +42,7 @@ namespace Module7.Final.Client.Scripts.Visual
                 //---------------------------------------------------------------------------------------------------------------//
                 while (true)
                 {
-                    Console.WriteLine($"Вас счет: {User.clientUser.GetWallet()}.р");
+                    
                     Console.WriteLine("Введите 0 для возврата в категории");
                     Console.WriteLine("Выберите товар для добавления в корзину");
                     Console.WriteLine();

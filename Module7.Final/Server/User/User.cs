@@ -21,7 +21,7 @@ namespace Module7.Final.Server.User
             UserAddress = "Косой переулок, где-то некий чулан под лестницей.1Г";
             Birthday = new DateTime(1980, 7, 31);
 
-            Wallet = 1000;
+           
         }
 
        

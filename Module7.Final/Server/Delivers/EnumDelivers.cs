@@ -6,25 +6,25 @@ using System.Threading.Tasks;
 
 namespace Module7.Final.Server.Delivers
 {
-    enum EnumTypeDelivers
+   internal enum EnumTypeDelivers
     {
         HomeDelivery,
         PickPointDelivery,
         ShopDelivery
     }
 
-    enum PickPointDelivers
+    internal enum PickPointDelivers
     {
-        Alex,
-        Tomas,
-        Fredi
+       Pyatoroshka,
+       Perekrestok,
+       Lenta
     }
 
-    enum ShopDelivery
+    internal enum ShopDelivery
     {
-        CityHall,
-        GalleryAbrakadabra,
-        productShopMonetochka
+        DeliveryShopCityHell,
+        DeliveryShopGalleryAbrakadabra,
+        DeliveryShopTaganka
 
     }
 

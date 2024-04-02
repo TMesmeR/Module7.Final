@@ -1,13 +1,17 @@
-﻿using Module7.Final.Server.Common.Scripts;
+﻿using Module7.Final.Client.Scripts.Visual.Delivers.PickPointDelivery;
+using Module7.Final.Client.Scripts.Visual.Delivers.ShopDeliverys;
+using Module7.Final.Server.Common.Scripts;
+using Module7.Final.Server.Delivers;
+using Module7.Final.Server.Order;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module7.Final.Client.Scripts.Visual
+namespace Module7.Final.Client.Scripts.Visual.Delivers
 {
-    internal class Delivers
+    internal class PickDeliver
 
     {
         static sbyte pickButton;
@@ -27,8 +31,10 @@ namespace Module7.Final.Client.Scripts.Visual
                 SwitchPick(ref pickButton);
                 if (pickButton == 0)
                 {
+                    Console.Clear();
                     return;
                 }
+
             }
 
         }
@@ -39,13 +45,24 @@ namespace Module7.Final.Client.Scripts.Visual
             switch (num)
             {
                 case 1:
-
+                   
+                    Console.Clear();
+                    Server.Order.Order.enumType = EnumTypeDelivers.HomeDelivery;
+                    Console.WriteLine("Выбрана доставка на дом. В заказе проверьте свои данные");
+                    Console.ReadLine();
                     break;
                 case 2:
+                    Server.Order.Order.enumType = EnumTypeDelivers.PickPointDelivery;
+                    Console.Clear();
+                    SwitchPickPoint.Print();
+
                     break;
                 case 3:
+                    Server.Order.Order.enumType = EnumTypeDelivers.ShopDelivery;
+                    Console.Clear();
+                    SwitchShopDelivery.Print();
                     break;
             }
-        } 
+        }
     }
 }

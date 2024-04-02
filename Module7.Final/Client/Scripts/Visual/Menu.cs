@@ -1,4 +1,5 @@
 ﻿using Module7.Final.Server.Common.Scripts;
+using Module7.Final.Server.Delivers;
 using Module7.Final.Server.User;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace Module7.Final.Client.Scripts.Visual
             while (true)
             {
                 
-                Console.WriteLine($"Вас счет: {User.clientUser.GetWallet()}.р");
+                
                 Console.WriteLine("Пожалуйста, выберите дальнейшее действие:");
                 Console.WriteLine();
                 Console.WriteLine("1 - Посмотреть группы товаров");
@@ -29,18 +30,18 @@ namespace Module7.Final.Client.Scripts.Visual
                 Console.WriteLine("0 - Выход из программы");
 
                 pickButton = Checks.CheckPickMenu();
-                SwitchPick(ref pickButton);
+                
 
                 if (pickButton == 0)
-                {
                     return;
-                }
-                    
+                
+
+                SwitchPick(pickButton);
 
             }
         }
 
-        static void SwitchPick(ref sbyte pickButton)
+        static void SwitchPick( sbyte pickButton)
         {
             switch (pickButton)
             {
@@ -51,9 +52,10 @@ namespace Module7.Final.Client.Scripts.Visual
                     Basket.PrintBasket();
                     break;
                 case 3:
-                    Delivers.PrintDelivers();
+                    Delivers.PickDeliver.PrintDelivers();
                     break;
                 case 4:
+                    Order.Print();
                     break;
             }
         }

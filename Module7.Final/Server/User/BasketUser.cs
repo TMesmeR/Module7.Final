@@ -54,6 +54,14 @@ namespace Module7.Final.Server.User
             
         }
 
+        internal static void PrintBasket(Dictionary<int, (string, int)> basketUser)
+        {
+            foreach (var keyValue in basketUser)
+            {
+                Console.WriteLine($"{keyValue.Key} - {keyValue.Value.Item1} - {keyValue.Value.Item2}");
+            }
+        }
+
         internal static int GetSummOrder() => sum;
     }
 }

@@ -16,9 +16,9 @@ namespace Module7.Final.Client.Scripts.Visual
         
        internal static void Print()
         {
-            if (Server.Order.Order.enumType == EnumTypeDelivers.HomeDelivery)
+            if (ServerOrders.enumType == EnumTypeDelivers.HomeDelivery)
                 Visual.Delivers.Delivers.HomeDelivers.HomeDeliver();
-            else if (Server.Order.Order.enumType == EnumTypeDelivers.PickPointDelivery)
+            else if (ServerOrders.enumType == EnumTypeDelivers.PickPointDelivery)
                 PickPointDeliverys.PickPointDelivery();
             else
                 ShopDeliverys.ShopDelivery();

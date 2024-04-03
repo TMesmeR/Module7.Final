@@ -16,7 +16,7 @@ namespace Module7.Final.Client.Scripts.Visual
         public static void Print()
         {
             Console.Clear();
-            Console.WriteLine($"Спасибо что был с нами {User.clientUser.GetUserName()}");
+            Console.WriteLine($"Спасибо что был с нами {ServerUser.clientUser.GetUserName()}");
             Console.WriteLine($"Будем ждать твоего возвращения!");
             Console.ReadKey();  
         }

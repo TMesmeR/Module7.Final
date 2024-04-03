@@ -19,12 +19,12 @@ namespace Module7.Final.Client.Scripts.Visual.Delivers.PickPointDelivery
         {
             Console.Clear();
             Console.WriteLine("Подробности заказа:");
-            Console.Write($"{User.clientUser.GetUserName()}, ");
+            Console.Write($"{ServerUser.clientUser.GetUserName()}, ");
             Console.WriteLine($"Ваш заказ будет доставлен в магазин {ServerOrders.GetNameDeliveres(PickPointDeliveres.PointDeliveres )}");
             Console.WriteLine($"Адрес магазина: {ServerOrders.GetAddressDeliveres(PickPointDeliveres.PointDeliveres)}");
             Console.WriteLine($"Доставка будет осуществлена в течении часа");
             Console.WriteLine($"Пожалуйста заберите заказ в течении 2 дней по времени работы магазина");
-            Console.WriteLine($"Чек вы получите на вашу почту: {User.clientUser.GetEmail()}");
+            Console.WriteLine($"Чек вы получите на вашу почту: {ServerUser.clientUser.GetEmail()}");
             Console.WriteLine();
             Console.WriteLine("//--------------------------------------------------//");
             Console.WriteLine("Ваш заказ:");

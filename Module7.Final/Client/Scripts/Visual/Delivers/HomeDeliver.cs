@@ -12,11 +12,11 @@ namespace Module7.Final.Client.Scripts.Visual.Delivers.Delivers
         {
             Console.Clear();
             Console.WriteLine("Подробности заказа:");
-            Console.Write($"{User.clientUser.GetUserName()}, ");
+            Console.Write($"{ServerUser.clientUser.GetUserName()}, ");
             Console.WriteLine("Ваш заказ будет доставлен на дом");
-            Console.WriteLine($"Адрес доставки: {User.clientUser.GetUserAdress()}");
+            Console.WriteLine($"Адрес доставки: {ServerUser.clientUser.GetUserAdress()}");
             Console.WriteLine($"Доставка будет осуществлена в течении часа");
-            Console.WriteLine($"Чек вы получите на вашу почту: {User.clientUser.GetEmail()}");
+            Console.WriteLine($"Чек вы получите на вашу почту: {ServerUser.clientUser.GetEmail()}");
             Console.WriteLine();
             Console.WriteLine("//--------------------------------------------------//");
             Console.WriteLine($"Имя курьера: {ServerOrders.GetCourierName()}");

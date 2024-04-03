@@ -25,8 +25,8 @@ namespace Module7.Final.Client.Scripts.Visual.Delivers
                 Console.WriteLine();
 
                 Console.WriteLine("1 - доставка на дом");
-                Console.WriteLine("2 - доставка курьером ");
-                Console.WriteLine("3 - доставка в определенную точку");
+                Console.WriteLine("2 - доставка в магазин - партнеры ");
+                Console.WriteLine("3 - доставка в наши магазины");
                 pickButton = Checks.CheckPickWayDelivers();
                 SwitchPick(ref pickButton);
                 if (pickButton == 0)

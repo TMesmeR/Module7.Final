@@ -1,0 +1,1 @@
+﻿global using ServerOrders = Module7.Final.Server.Order.Order;

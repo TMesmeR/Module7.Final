@@ -19,7 +19,7 @@ namespace Module7.Final.Server.User
             UserName = "Гарри";
             Email = "Potter3000@voland.mort";
             UserAddress = "Косой переулок, где-то некий чулан под лестницей.1Г";
-            Birthday = new DateTime(1980, 04, 03);
+            Birthday = new DateTime(1980, 7, 31);
 
            
         }

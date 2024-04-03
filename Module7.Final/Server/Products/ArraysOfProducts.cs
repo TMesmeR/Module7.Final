@@ -9,9 +9,7 @@ using System.Threading.Tasks;
 namespace Module7.Final.Server.Products
 {
     /// <summary>
-    /// Содержит группы и названия продуктов.
-    /// В задумке, группы должны были бы получать инфо с txt файлов, 
-    /// но не знаю как поведет себя git.
+    /// Содержит группы и названия продуктов
     /// Ну и заодно реализована индексация
     /// </summary>
     public class ArraysOfProducts
